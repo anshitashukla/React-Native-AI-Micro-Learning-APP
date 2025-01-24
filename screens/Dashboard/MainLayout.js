@@ -14,20 +14,37 @@ const bottom_tabs = constants.bottom_tabs.map((bottom_tab) => ({
 }));
 
 const TabIndicator = ({measureLayout, scrollX}) => {
+  const inputRange = bottom_tabs.map((_, i) => i * SIZES.width);
+
+  const tabIndicatorWidth = scrollX.interpolate({
+    inputRange,
+    outputRange: measureLayout.map((measure) => measure.width),
+  });
+
+  const translateX = scrollX.interpolate({
+    inputRange,
+    outputRange: measureLayout.map((measure) => measure.x),
+  });
+
   return (
     <Animated.View
       style={{
         position: 'absolute',
         left: 0,
         height: '100%',
-        width: 80,
+        width: tabIndicatorWidth,
         borderRadius: SIZES.radius,
         backgroundColor: COLORS.primary,
+        transform: [
+          {
+            translateX,
+          },
+        ],
       }}></Animated.View>
   );
 };
 
-const Tabs = ({scrollX}) => {
+const Tabs = ({scrollX, onBottomTabPress}) => {
   const containerRef = React.useRef();
   const [measureLayout, setMeasureLayout] = useState([]);
 
@@ -74,7 +91,8 @@ const Tabs = ({scrollX}) => {
               paddingHorizontal: 15,
               alignItems: 'center',
               justifyContent: 'center',
-            }}>
+            }}
+            onPress={() => onBottomTabPress(index)}>
             <Image
               source={item.icon}
               resizeMode="contain"
@@ -100,12 +118,19 @@ const MainLayout = () => {
   const flatListRef = React.useRef();
   const scrollX = React.useRef(new Animated.Value(0)).current;
 
+  const onBottomTabPress = React.useCallback((bottomTabIndex) => {
+    flatListRef?.current?.scrollToOffset({
+      offset: bottomTabIndex * SIZES.width,
+    });
+  });
+
   function renderContent() {
     return (
       <View style={{flex: 1}}>
         <Animated.FlatList
           ref={flatListRef}
           horizontal
+          scrollEnabled={false}
           pagingEnabled
           snapToAlignment="center"
           snapToInterval={SIZES.width}
@@ -162,7 +187,7 @@ const MainLayout = () => {
               width: '100%',
               height: '100%',
             }}>
-            <Tabs scrollX={scrollX}></Tabs>
+            <Tabs scrollX={scrollX} onBottomTabPress={onBottomTabPress}></Tabs>
           </View>
         </Shadow>
       </View>
