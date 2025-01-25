@@ -4,7 +4,12 @@ import {FlatList} from 'react-native-gesture-handler'; // works better with Hori
 
 import {COLORS, FONTS, SIZES, icons, images, dummyData} from '../../constants';
 
-import {IconButton, TextButton} from '../../components';
+import {
+  IconButton,
+  TextButton,
+  VerticalCourseCard,
+  LineDivider,
+} from '../../components';
 
 const Home = () => {
   function renderHeader() {
@@ -111,21 +116,31 @@ const Home = () => {
     );
   }
 
-  // function renderCourses() {
-  //   return (
-  //     <FlatList
-  //       horizontal
-  //       data={dummyData.courses_list_1}
-  //       listKey="Courses"
-  //       keyExtractor={(item) => `Courses-${item.id}`}
-  //       showsHorizontalScrollIndicator={false}
-  //       contentContainerStyle={{
-  //         marginTop: SIZES.padding,
-  //       }}
-  //       // renderItem={({})}
-  //     ></FlatList>
-  //   );
-  // }
+  function renderCourses() {
+    return (
+      <FlatList
+        horizontal
+        data={dummyData.courses_list_1}
+        listKey="Courses"
+        keyExtractor={(item) => `Courses-${item.id}`}
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{
+          marginTop: SIZES.padding,
+        }}
+        renderItem={({item, index}) => (
+          <VerticalCourseCard
+            containerStyle={{
+              marginLeft: index == 0 ? SIZES.padding : SIZES.radius,
+              padding: SIZES.radius,
+              marginRight:
+                index == dummyData.courses_list_1.length - 1
+                  ? SIZES.padding
+                  : 0,
+            }}
+            course={item}></VerticalCourseCard>
+        )}></FlatList>
+    );
+  }
   return (
     <View
       style={{
@@ -145,7 +160,12 @@ const Home = () => {
         {renderStartLearning()}
 
         {/* Courses */}
-        {/* {renderCourses()} */}
+        {renderCourses()}
+
+        <LineDivider
+          lineStyle={{
+            marginVertical: SIZES.padding,
+          }}></LineDivider>
       </ScrollView>
     </View>
   );
