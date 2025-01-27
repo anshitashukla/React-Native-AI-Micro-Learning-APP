@@ -49,7 +49,7 @@ const courses_list_1 = [
 const courses_list_2 = [
   {
     id: 0,
-    title: 'The Ultimate Ui/Ux Course Beginner to Advanced',
+    title: 'The Ultimate AI Course Beginner to Advanced',
     duration: '2h 30m',
     instructor: 'Anshita Shukla',
     ratings: 4.9,
@@ -59,7 +59,7 @@ const courses_list_2 = [
   },
   {
     id: 1,
-    title: 'The Ultimate guide to Generative AI',
+    title: 'Python for Beginners',
     duration: '2h 30m',
     instructor: 'Anshita Shukla',
     ratings: 4.9,
@@ -69,7 +69,7 @@ const courses_list_2 = [
   },
   {
     id: 2,
-    title: 'Python for Beginners',
+    title: 'The Ultimate guide to Generative AI',
     duration: '2h 30m',
     instructor: 'Anshita Shukla',
     ratings: 4.9,

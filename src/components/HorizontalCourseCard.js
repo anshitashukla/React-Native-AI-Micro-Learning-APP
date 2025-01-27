@@ -105,7 +105,7 @@ const HorizontalCourseCard = ({containerStyle, course}) => {
           }}>
           <Text
             style={{
-              ...FONTS.h2,
+              ...FONTS.h3,
               color: COLORS.primary,
             }}>
             ${course.price.toFixed(2)}
