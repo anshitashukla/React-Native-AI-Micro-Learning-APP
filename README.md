@@ -1,8 +1,16 @@
+![alt text](https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.41.59.png)
+
+![alt text](https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.42.05.png)
+
+![alt text](https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.42.13.png)
+
+![alt text](https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.42.16.png)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
