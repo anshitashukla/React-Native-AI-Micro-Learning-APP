@@ -1,10 +1,14 @@
-![alt text](https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.41.59.png)
+## Screenshots
 
-![alt text](https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.42.05.png)
+Below are some screenshots of the app running on an iPhone 15 Pro simulator:
 
-![alt text](https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.42.13.png)
+<img src="https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.41.59.png?raw=true" alt="Initial app screen on iPhone 16 Pro" width="300" />
 
-![alt text](https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.42.16.png)
+<img src="https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.42.05.png?raw=true" alt="Chatbot interaction screen 1 on iPhone 16 Pro" width="300" />
+
+<img src="https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.42.13.png?raw=true" alt="Chatbot interaction screen 2 on iPhone 16 Pro" width="300" />
+
+<img src="https://github.com/anshitashukla/React-Native-AI-Micro-Learning-APP/blob/master/src/assets/images/Simulator%20Screenshot%20-%20iPhone%2016%20Pro%20-%202025-05-15%20at%2022.42.16.png?raw=true" alt="Chatbot response screen on iPhone 16 Pro" width="300" />
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
