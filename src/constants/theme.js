@@ -19,7 +19,7 @@ export const COLORS = {
 
   additionalColor4: '#C3C3C3',
   additionalColor9: '#F3F3F3',
-  additionalColor11: '#F0FFFB',
+  additionalColor11: '#51e9fe',
   additionalColor13: '#EBF3EF',
 
   white: '#FFFFFF',
